@@ -1,0 +1,14 @@
+{
+  "debug": true,
+  "allowed_hosts": [
+    "localhost"
+  ],
+  "secret": "---50 digit secret key---",
+  "mail": {
+    "host": "---mail host---",
+    "port": "---post no---",
+    "user": "---user---",
+    "password": "---mailgun password---",
+    "from": "--from address--"
+  }
+}

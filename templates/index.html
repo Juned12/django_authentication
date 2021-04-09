@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5">
+        
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">
+                    Welcome To Django !
+                </h4>
+                
+            </div>
+            <div class="card-body">
+                <h4 >Use {{ user }} to sign in next time</h4>  
+                <h6 class="text-muted">
+                    A simple django application with functionality to create a user with email and password
+                </h6>
+            </div>
+            <div class="card-footer">
+                <a href="{% url 'logout' %}" class="text-primary" >Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+
+Hi,
+Welcome to Django ! 
+Your account was created successfully
+Hoping for your positive response
+Regards,
+Mansuri Juned
+

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row justify-content-center mt-2 ">
+  <div class="col-06 col-md-5 col-xl-4 my-5">
+    <div class="card">
+      <div class="card-header">
+          Create an Account 
+      </div>
+      <div class="card-body">
+        <form  role="form" method="post">
+          {% csrf_token %}
+          <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              {{ form.email }}   
+          </div>
+          <span class="text-danger">{{ form.email.errors }}</span>          
+          <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              {{ form.password1 }}
+          </div>
+          <span class="text-danger">{{ form.password1.errors }}</span>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            {{ form.password2 }}
+          </div>
+          <span class="text-danger">{{ form.password2.errors }}</span>
+          <br />
+          <button type="submit" name="register" class="btn btn-primary pull-left">Register</button>
+          <br />
+          <span class="pull-right">
+            Have an account? <a href="{% url 'login' %}" class="text-primary">Login</a>
+          </span>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+{% endblock %}
+
